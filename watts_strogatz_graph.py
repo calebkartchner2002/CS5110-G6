@@ -7,9 +7,10 @@ import os
 os.makedirs("plots", exist_ok=True)
 
 # Parameters
-T, R, P, S = 1.8, 1.5, 0, -0.3         # Payoffs for Prisoner's Dilemma
+R1, S1, T1, P1 = 1.5, -0.3, 1.8, 0     # Payoffs for Prisoner's Dilemma M1
+R2, S2, T2, P2 = 14.5, -0.5, 15, 0     # Payoffs for Prisoner's Dilemma M2
+
 beta_values = [0.1, 0.5]               # Selection intensities for payoff-based strategy
-b, c = 1.8, 0.3                        # Benefit and cost for cooperation
 num_nodes = 1000                       # Number of nodes for Watts-Strogatz Network
 k_values = [2, 6]                      # Average degree of network for Watts-Strogatz
 popularity_factor = 22                 # Average edges per node in Facebook dataset
@@ -17,8 +18,8 @@ timesteps = 100                        # Number of turns in each game
 num_simulations = 10                   # Number of simulations per condition
 
 # Define the two payoff matrices
-M1 = np.array([[R, S], [T, P]])
-M2 = np.array([[14.5, -0.5], [15, 0]])
+M1 = np.array([[R1, S1], [T1, P1]])
+M1 = np.array([[R2, S2], [T2, P2]])
 
 def initialize_strategy(num_nodes):
     """Randomly initialize strategy (1 for cooperate, 0 for defect)"""
