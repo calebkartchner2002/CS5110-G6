@@ -34,3 +34,13 @@
 
 *   Printing Numerical Results of Cooperation Trends:
     *   **Log and print the numerical results** of cooperation at the end of each simulation, rather than relying solely on graphical output. After each simulation, you can calculate and print the average proportion of cooperators over all timesteps or at specific intervals. This will allow for a more quantitative analysis of how cooperation evolves over time and how it compares across different experimental conditions (e.g., varying rewiring probabilities or popularity effects). For example, you could print the average cooperation rate for each condition (strategy type, matrix, 𝛽, and network structure) at the end of each simulation or timestep, and then aggregate the results across multiple simulations for a summary output. This approach would give a clearer numerical comparison of different strategies and network configurations.
+
+### **Cooperation Statistics**
+
+*   Average Decay Rate of Cooperation (avg_decay_rate):
+    *   **What it means:** This is the average decrease in the proportion of cooperators per timestep across all simulations. It provides a single summary number to indicate how fast cooperation generally declines over time in the game.
+    *   **Interpretation:** A higher positive value indicates that cooperation is decreasing quickly. A lower value (close to zero) means cooperation remains relatively stable over time.
+
+*   Mean Percentage of Cooperators and Variance:
+    *   **What it means:** The mean percentage of cooperators is the average proportion of nodes cooperating over all timesteps and all simulations. It provides a summary measure of how cooperative the population remains, on average. The variance quantifies the variability in cooperation levels across simulations, reflecting how consistent or unpredictable cooperation levels are.
+    *   **Interpretation:** A high mean indicates a tendency for the population to sustain cooperation, while a low mean suggests cooperation is rare or frequently collapses. A low variance indicates that cooperation levels are similar across simulations, suggesting stability under the given parameters. A high variance implies significant differences in cooperation trends, potentially due to network topology, strategy variability, or randomness in the simulation.
