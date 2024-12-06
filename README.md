@@ -1,6 +1,7 @@
 # CS5110-G6
 
 ## Popularity-Based Approach to Promote Cooperation in The Prisoner’s Dilemma Game
+Paper: https://dl.acm.org/doi/pdf/10.1145/3625007.3627723
 
 ### **Information on the Research Paper**
 
