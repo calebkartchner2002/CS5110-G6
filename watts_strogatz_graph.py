@@ -14,7 +14,6 @@ beta_values = [0.1, 0.5]               # Selection intensities for payoff-based 
 
 num_nodes = 4000                       # Number of nodes for Watts-Strogatz Network 4039
 k_values = [2, 6]                      # Average degree of network for Watts-Strogatz
-popularity_factor = 22                 # Average edges per node in Facebook dataset
 timesteps = 100                        # Number of turns in each game
 num_simulations = 10                   # Number of simulations per condition
 
