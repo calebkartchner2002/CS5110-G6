@@ -115,7 +115,7 @@ for strategy_type in ["payoff", "popularity"]:
                     for _ in range(num_simulations)
                 ]
                 
-                # plot_cooperation_trends(cooperator_counts_list, strategy_type, matrix_name, k, beta, timesteps, num_simulations)
+                plot_cooperation_trends(cooperator_counts_list, strategy_type, matrix_name, k, beta, timesteps, num_simulations)
                 
                 calculate_cooperation_decay_stats(
                     cooperator_counts_list,
